@@ -37,4 +37,9 @@ ng build
 6. View Tasks:See all your tasks listed under their categories.  
 7. Get Notifications:Receive alerts if a task is overdue.  
 8. Delete Tasks:Delete tasks once if complete
-9. Sync Data Automatically: All data is saved securely in Firebase. 
+9. Sync Data Automatically: All data is saved securely in Firebase.
+
+#To Download as a Zip File
+1)Click on the "Code" button
+2)Select "Download ZIP".
+3)Extract the ZIP file on their local machine to access the project.
