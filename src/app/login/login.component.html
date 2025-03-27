@@ -1,0 +1,55 @@
+<div class="login-container">
+    <!-- Sign-Up Form -->
+    <div *ngIf="showSignUp">
+      <h2 class="login-heading">Sign Up</h2>
+      <form (ngSubmit)="onSignUp()">
+        <input
+          type="email"
+          placeholder="Email"
+          [(ngModel)]="signUpData.email"
+          name="email"
+          required
+          class="input-field"
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          [(ngModel)]="signUpData.password"
+          name="password"
+          required
+          class="input-field"
+          minlength="6"
+        />
+        <button type="submit" class="login-button">OK</button>
+      </form>
+      <a href="#" (click)="switchToLogin()" class="signup-link">Already a member? Login</a>
+    </div>
+  
+    <!-- Login Form -->
+    <div *ngIf="showLogin">
+      <h2 class="login-heading">Login</h2>
+      <form (ngSubmit)="onLogin()">
+        <input
+          type="email"
+          placeholder="Email"
+          [(ngModel)]="loginData.email"
+          name="email"
+          required
+          class="input-field"
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          [(ngModel)]="loginData.password"
+          name="password"
+          required
+          class="input-field"
+          minlength="6"
+        />
+        <button type="submit" class="login-button">Login</button>
+      </form>
+      <a href="#" class="forgot-password">Forgot Password?</a>
+      <a href="#" (click)="switchToSignUp()" class="signup-link">Not a member? Sign Up</a>
+    </div>
+  </div>
+  

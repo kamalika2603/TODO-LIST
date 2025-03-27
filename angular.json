@@ -33,6 +33,13 @@
           },
           "configurations": {
             "production": {
+              "outputHashing": "all",
+              "fileReplacements": [
+                {
+                    "replace": "src/environments/environment.ts",
+                     "with": "src/environments/environment.prod.ts"
+                 }
+               ],
               "budgets": [
                 {
                   "type": "initial",
@@ -44,8 +51,7 @@
                   "maximumWarning": "4kB",
                   "maximumError": "8kB"
                 }
-              ],
-              "outputHashing": "all"
+              ]
             },
             "development": {
               "optimization": false,
@@ -92,5 +98,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "9096f82a-d83b-49eb-b8c9-e7a5b06e4c3d"
   }
 }

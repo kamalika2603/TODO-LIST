@@ -1,0 +1,234 @@
+/* Header Styling */
+.header {
+  text-align: center;
+  background-color: #33475b; /* Dark blue color */
+  color: white;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Title Bar Styling */
+.title-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-text {
+  font-size: 30px; /* Larger size for title */
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+  margin: 0;
+  margin-right: 15px; /* Space between text and logo */
+}
+
+.logo-container {
+  display: inline-block;
+}
+
+.logo {
+  font-size: 36px;
+  line-height: 1;
+}
+
+/* Categories Section */
+.categories {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.category-button {
+  background-color: #f0f0f0;
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  padding: 40px;
+  margin: 20px;
+  text-align: center;
+  cursor: pointer;
+  width: 220px;
+}
+
+.category-button:hover {
+  background-color: #33475b;
+  color: white;
+}
+
+.category-button.active {
+  background-color: #33475b;
+  color: white;
+  border-color: #33475b;
+}
+
+.icon {
+  display: block;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.name {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Tasks Section */
+.tasks {
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.tasks h2 {
+  margin-bottom: 15px;
+  color: #33475b;
+}
+
+.tasks ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Task Details */
+.task-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.task-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.task-description {
+  font-size: 14px;
+  color: #555;
+}
+
+.task-deadline {
+  margin-right: 15px;
+  font-style: italic;
+  color: gray;
+}
+
+/* Action Buttons */
+.actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.actions button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Add Task Section */
+.add-task-section {
+  display: flex;
+  flex-direction: column; /* Stack Add Task button and input/mic vertically */
+  align-items: flex-start; /* Align items to the left */
+  gap: 10px; /* Add space between Add Task button and input/mic */
+  margin-top: 10px; /* Space above the Add Task section */
+  width: 100%; /* Ensure the section fits the container */
+}
+
+/* Add Task Button */
+.add-task-section > button {
+  padding: 10px 15px;
+  background-color: #33475b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-task-section > button:hover {
+  background-color: #5a6b7c; /* Subtle hover effect */
+}
+
+/* Input and Mic Alignment */
+.add-task-section > div {
+  display: flex; /* Align input and mic button horizontally */
+  align-items: center; /* Vertically align input and mic button */
+  gap: 10px; /* Add spacing between input box and mic button */
+  width: 100%; /* Stretch to full width */
+}
+
+.add-task-section input {
+  flex: none; /* Allow input box to take up the remaining space */
+  padding: 10px;
+  width: 275%;
+  max-width:900px;
+  border: 1px solid #ddd; /* Subtle border for input box */
+  border-radius: 5px; /* Rounded corners for input box */
+  font-size: 16px; /* Ensure input text is readable */
+  box-sizing: border-box; /* Prevent overflow */
+}
+
+.add-task-section > div > button {
+  appearance: none; /* Remove browser-specific button styling */
+  -webkit-appearance: none; /* Specific for WebKit browsers (Chrome, Safari) */
+  -moz-appearance: none; /* Specific for Mozilla browsers (Firefox) */
+  background-color: transparent; /* Completely remove background color */
+  background: none; /* Additional safeguard */
+  box-shadow: none; /* Eliminate shadow effects */
+  border: none; /* Remove borders */
+  cursor: pointer; /* Pointer cursor for interaction */
+  font-size: 20px; /* Icon size for the mic */
+  width: 25px; /* Compact width */
+  height: 50px; /* Match the height of the input box */
+  display: flex;
+  margin-left: 320px;
+  justify-content: center;
+  align-items: center; /* Center-align the mic icon */
+}
+
+.add-task-section > div > button:hover {
+  color: #555; /* Subtle hover effect */
+}
+
+
+/* Notification Styling */
+.notification {
+  margin: 10px auto;
+  max-width: 600px;
+  padding: 15px;
+  background-color: #ffd1d1; /* Light red for overdue tasks */
+  border: 1px solid #ff0000; /* Red border to emphasize urgency */
+  border-radius: 10px;
+  color: #5a2020; /* Dark red for text */
+}
+
+.notification h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.notification ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.notification li {
+  font-size: 16px;
+}

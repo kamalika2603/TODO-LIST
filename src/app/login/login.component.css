@@ -1,0 +1,79 @@
+/* Login Container */
+.login-container {
+    width: 100%;
+    max-width: 450px; /* Increased container width */
+    height: 600px; /* Adjust height dynamically */
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Login and Sign-Up Heading */
+  .login-heading {
+    font-size: 24px;
+    color: #33475b; /* Dark blue color */
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Form Fields */
+  .input-field {
+    width: calc(100% - 40px); /* Ensures equal space from left and right edges */
+    padding: 10px;
+    margin: 12px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Includes padding and borders in width calculation */
+  }
+  
+  /* Forgot Password Link */
+  .forgot-password {
+    display: block;
+    text-align: right;
+    margin: 5px 0 15px;
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  
+  /* Buttons */
+  .login-button {
+    width: calc(100% - 40px); /* Matches input field width */
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .login-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Sign-Up Section */
+  .signup-section {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .signup-link {
+    color: #007bff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .signup-link:hover {
+    text-decoration: underline;
+  }
+  
